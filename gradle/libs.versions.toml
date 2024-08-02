@@ -1,0 +1,28 @@
+[versions]
+apache-commons-lang3 = "3.15.0"
+apache-commons-text = "1.12.0"
+clikt = "4.4.+"
+jackson = "2.17.+"
+java-language = "21"
+kotlin = "2.0.0"
+kotlin-logging = "7.0.0"
+kotlin-result = "2.+"
+ktemplar = "0.1.1"
+slf4j = "2.0.13"
+terpal = "2.0.0-1.0.0-RC1"
+
+[libraries]
+apache-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "apache-commons-lang3" }
+apache-commons-text = { module = "org.apache.commons:commons-text", version.ref = "apache-commons-text" }
+clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jackson" }
+kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
+kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-logging = { module = "io.github.oshai:kotlin-logging", version.ref = "kotlin-logging" }
+kotlin-result = { module = "com.michael-bull.kotlin-result:kotlin-result", version.ref = "kotlin-result" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+ktemplar = { module = "com.twingineer:ktemplar", version.ref = "ktemplar" }
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+
+[plugins]
+terpal = { id = "io.exoquery.terpal-plugin", version.ref = "terpal" }
