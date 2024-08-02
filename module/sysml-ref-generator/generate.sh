@@ -4,7 +4,7 @@ set -e
 
 if [ "$2" = "" ]
 then
-  echo "Usage: $0 </path/to/SysML.uml> </path/to/SysML-v2-API-Services>"
+  echo "Usage: $0 </path/to/SysML.mof> </path/to/SysML-v2-API-Services>"
   exit
 fi
 

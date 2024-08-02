@@ -82,6 +82,26 @@ tasks {
         )
     }
 
+    register<JavaExec>("generateJsonSchemaKerML") {
+        val output = project.layout.buildDirectory.dir("gen/jsonschema-kerml")
+        mainClass.set("com.twingineer.sysml.ref.gen.GenerateJsonSchema")
+
+        dependsOn(jar)
+
+        doFirst {
+            checkInputParameter()
+            delete(output)
+        }
+
+        classpath = sourceSets.main.get().runtimeClasspath
+        args = listOf(
+            "--input",
+            project.properties["input"].toString(),
+            "--output",
+            output.get().toString(),
+        )
+    }
+
     register<JavaExec>("generateJsonLd") {
         val output = project.layout.buildDirectory.dir("gen/jsonld")
         mainClass.set("com.twingineer.sysml.ref.gen.GenerateJsonLd")
