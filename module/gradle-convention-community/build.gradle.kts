@@ -12,8 +12,10 @@ repositories {
 
 dependencies {
     implementation(platform(libs.kotlin.bom))
-    implementation(libs.kotlin.bom)
+
+    implementation(libs.dokka.gradle)
     implementation(libs.kotlin.gradle)
+    implementation(libs.maven.publish)
 
     // ref: https://github.com/gradle/gradle/issues/15383#issuecomment-779893192
     implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))

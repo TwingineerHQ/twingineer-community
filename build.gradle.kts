@@ -7,3 +7,18 @@ allprojects {
 repositories {
     mavenCentral()
 }
+
+tasks {
+    sequenceOf(
+        "assemble",
+        "build",
+        "clean",
+    ).forEach { name ->
+        register(name) {
+            group = "build"
+            gradle.includedBuilds.forEach {
+                dependsOn(it.task(":$name"))
+            }
+        }
+    }
+}
