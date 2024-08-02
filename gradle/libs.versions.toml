@@ -1,13 +1,12 @@
 [versions]
 apache-commons-lang3 = "3.15.0"
 apache-commons-text = "1.12.0"
-clikt = "4.4.+"
+clikt = "4.4.0"
 dokka = "1.9.20"
-jackson = "2.17.+"
+jackson = "2.17.2"
 java-language = "21"
 kotlin = "2.0.0"
 kotlin-logging = "7.0.0"
-kotlin-result = "2.+"
 ktemplar = "0.1.1"
 maven-publish = "0.29.0"
 slf4j = "2.0.13"
@@ -22,7 +21,6 @@ jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jac
 kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 kotlin-logging = { module = "io.github.oshai:kotlin-logging", version.ref = "kotlin-logging" }
-kotlin-result = { module = "com.michael-bull.kotlin-result:kotlin-result", version.ref = "kotlin-result" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 ktemplar = { module = "com.twingineer:ktemplar", version.ref = "ktemplar" }
 maven-publish = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "maven-publish" }

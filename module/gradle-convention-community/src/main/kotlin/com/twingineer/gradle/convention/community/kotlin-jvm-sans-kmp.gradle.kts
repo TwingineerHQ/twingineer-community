@@ -12,8 +12,6 @@ val libs = the<org.gradle.accessors.dm.LibrariesForLibs>()
 
 dependencies {
     implementation(platform(libs.kotlin.bom))
-    implementation(libs.kotlin.logging)
-    implementation(libs.kotlin.result)
     testImplementation(libs.kotlin.test)
 }
 
