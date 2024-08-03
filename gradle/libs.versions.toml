@@ -27,4 +27,6 @@ maven-publish = { module = "com.vanniktech:gradle-maven-publish-plugin", version
 slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
 
 [plugins]
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
 terpal = { id = "io.exoquery.terpal-plugin", version.ref = "terpal" }

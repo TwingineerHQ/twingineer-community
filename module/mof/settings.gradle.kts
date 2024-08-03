@@ -1,5 +1,8 @@
 pluginManagement {
     includeBuild("../gradle-convention-community")
+    repositories {
+        gradlePluginPortal()
+    }
 }
 
 dependencyResolutionManagement {

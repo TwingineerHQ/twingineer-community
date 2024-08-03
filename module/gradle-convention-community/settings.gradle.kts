@@ -1,5 +1,3 @@
-rootProject.name = "gradle-convention-community"
-
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
