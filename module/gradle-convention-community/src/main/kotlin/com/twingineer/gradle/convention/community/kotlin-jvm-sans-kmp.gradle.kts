@@ -10,8 +10,8 @@ repositories {
 
 try {
     dependencies {
-        implementation(platform(libs.kotlin.bom.get()))
-        testImplementation(libs.kotlin.test.get())
+        implementation(platform(libs.kotlin.bom))
+        testImplementation(libs.kotlin.test)
     }
 
     kotlin {

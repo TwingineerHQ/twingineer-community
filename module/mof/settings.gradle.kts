@@ -1,16 +1,12 @@
 pluginManagement {
-    includeBuild("../gradle-convention-community")
     repositories {
         gradlePluginPortal()
     }
+    includeBuild("../gradle-convention-community")
 }
 
-dependencyResolutionManagement {
-    versionCatalogs {
-        create("libs") {
-            from(files("../../gradle/libs.versions.toml"))
-        }
-    }
+plugins {
+    id("com.twingineer.gradle.convention.community.module")
 }
 
 // IMPORTANT order matters here - all dependencies, transitively, have to precede the depender

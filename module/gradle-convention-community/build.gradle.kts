@@ -1,7 +1,7 @@
 import com.vanniktech.maven.publish.SonatypeHost
 
 group = "com.twingineer"
-version = "0.1.1"
+version = "0.1.2"
 description = "Gradle conventions for Twingineer Community"
 
 plugins {
